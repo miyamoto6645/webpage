@@ -4,7 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <script>
-
+    function showwebデザインEnsyupage(){
+      item=document.getElementById("showwebデザインsection")
+      item.style.display="block"
+      item=document.getElementById("")
+      item.style.display="none"
+    }
+    function showMosExcelpage(){
+      item.document.getElementById("page1")
+      item.style.display="none"
+      item=document.getElementById("page2")
+      item.style.display="block"
+    }
   </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,25 +26,28 @@
   </header>
   <nav>
     <ul>
-      <li>Webデザイン</li>
-      <li>MosExcel</li>
-      <li>JavaScript演習</li>
+      <li onclick="showwebデザインsection()">Webデザイン</li>
+      <li onclick="showMosExcelsection()">MosExcel</li>
+      <li onclick="showJavaScriptsection()">JavaScript演習</li>
       <li>迷路</li>
       <li>円(CG)</li>
       <li>πの計算</li>
       <li>回転</li>
     </ul>
   </nav>
-  <section>
+  <section id="webデザインsection">
     <h1>Webデザイン</h1>
     <p>Web上のデザインをHTMLとCSSを使って学びました。
       以下に作った作品のリンクを参照します。</p>
     <p><a href="Webデザイン\0128.19055宮本\index.html">制作物のリンク</a></p>
   </section>
-  <section>
+  <section id="JavaScriptsection">
     <h1>JavaScript演習</h1>
     <p>ブラウザ上でWebページをダイナミックに動かすための簡単なプログラミングを学習しました。</p>
     <p><a href="2020-11-03/random_work">制作物のリンク</a></p>
+  </section>
+  <section id="MosExcel">
+    <h1>MosExcel</h1>
   </section>
   <footer>
 
